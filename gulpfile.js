@@ -5,7 +5,9 @@ var uglify 		= require('gulp-uglify');
 
 gulp.task('browser-sync', function() {
     browserSync.init({
-        proxy: "gulp.sj"
+        server: {
+            baseDir: "./"
+        }
     });
 });
 
